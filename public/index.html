@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <title>OpenAI Imgae Generator</title>
+</head>
+<body>
+  <div class="image-generator">
+    <div class="container">
+      <h1>Image Generator</h1>
+      <form data-image-generator-form>
+        <div>
+          <input type="text" placeholder="Enter your text" name="prompt">
+        </div>
+        <div class="sizes">
+          <div>
+            <label for="size">S</label>
+            <input type="radio" name="size" id="small" value="small">
+          </div>
+
+          <div>
+            <label for="size">M</label>
+            <input type="radio" name="size" id="size" value="medium">
+          </div>
+
+          <div>
+            <label for="size">L</label>
+            <input type="radio" name="size" id="size" value="big">
+          </div>
+        </div>
+
+        <button type="submit" class="btn-submit">Generate</button>
+      </form>
+    </div>
+  </div>
+
+  
+  <div class="image-generated">
+    <img data-image>
+  </div>
+  
+  <div class="loading" data-loading>Generate...</div>
+  <div class="error" data-error></div>
+</body>
+</html>
